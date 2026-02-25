@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure | Saeed Quran Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .price-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .price-card.featured {
+            border-color: var(--secondary-color);
+            transform: scale(1.05);
+            position: relative;
+        }
+
+        .price-card.featured .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary-color);
+            color: var(--primary-dark);
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+
+        .price-amount span {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .price-features li {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        .price-features li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div style="background: var(--primary-dark); color: white; padding: 5px 0; font-size: 0.8rem;">
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <div>
+                <i class="fas fa-phone"></i> +92 302 7480855 | <i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com
+            </div>
+            <div class="urdu">
+                <i class="fas fa-language"></i> اردو | English
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <div class="logo-text">
+                    <h1>Saeed Quran Academy</h1>
+                    <span class="urdu">سعید قرآن اکیڈمی</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="blog.html">Blog</a>
+                <a href="pricing.html">Fees</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="nav-cta">Free Trial Class</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 60px 0;">
+        <div class="container">
+            <h1 class="urdu" style="color: var(--secondary-color);">فیس کا تعین</h1>
+            <h1 style="color: var(--secondary-color);">Affordable Fee Structure</h1>
+            <p>We provide high-quality Quranic education at the most competitive rates globally.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section>
+        <div class="container">
+            <div class="pricing-table">
+                <!-- Basic Plan -->
+                <div class="price-card">
+                    <h3>Basic Plan</h3>
+                    <p>2 Days a Week</p>
+                    <div class="price-amount">$30<span>/month</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 8 Classes per month</li>
+                        <li><i class="fas fa-check"></i> 30 Mins sessions</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Classes</li>
+                        <li><i class="fas fa-check"></i> Any Course</li>
+                        <li style="text-decoration: line-through;"><i class="fas fa-times"></i> Weekend Classes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="display: block; margin-top: 30px;">Choose
+                        Plan</a>
+                </div>
+
+                <!-- Recommended Plan -->
+                <div class="price-card featured">
+                    <div class="badge">MOST POPULAR</div>
+                    <h3>Standard Plan</h3>
+                    <p>3 Days a Week</p>
+                    <div class="price-amount">$45<span>/month</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 12 Classes per month</li>
+                        <li><i class="fas fa-check"></i> 30 Mins sessions</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Classes</li>
+                        <li><i class="fas fa-check"></i> Multiple Courses</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="display: block; margin-top: 30px;">Choose
+                        Plan</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="price-card">
+                    <h3>Premium Plan</h3>
+                    <p>5 Days a Week</p>
+                    <div class="price-amount">$70<span>/month</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 20 Classes per month</li>
+                        <li><i class="fas fa-check"></i> 40 Mins sessions</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Classes</li>
+                        <li><i class="fas fa-check"></i> All Courses Included</li>
+                        <li><i class="fas fa-check"></i> Priority Scheduling</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline" style="display: block; margin-top: 30px;">Choose
+                        Plan</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px; text-align: center; background: #fffde7; padding: 30px; border-radius: 15px;">
+                <h3 class="urdu" style="color: #f57f17;">خصوصی رعایت</h3>
+                <h3 style="color: #f57f17;">Special Discounts</h3>
+                <p>We offer <strong>10% discount</strong> for siblings and <strong>free education</strong> for orphans
+                    and deserving students. Please contact us for details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section style="background: #f9f9f9;">
+        <div class="container" style="text-align: center;">
+            <h2>Accepted Payment Methods</h2>
+            <div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px; flex-wrap: wrap;">
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"
+                        style="height: 30px;">
+                </div>
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"
+                        style="height: 30px;">
+                </div>
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <p style="font-weight: bold; color: #cc0000;">JazzCash</p>
+                </div>
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <p style="font-weight: bold; color: #00bf63;">EasyPaisa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer ... same as index.html -->
+    <footer style="margin-top: 50px;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h1 style="color: var(--secondary-color); font-size: 1.5rem;">Saeed Quran Academy</h1>
+                    <p style="margin-top: 15px;">A leading international online Quran academy dedicated to spreading the
+                        light of Quranic education globally.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="pricing.html">Fee Structure</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dehli Gate Multan, Pakistan</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-phone"></i> +92 302 7480855</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="https://web.facebook.com/SialQuranicMasteryInstitute" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@SialQuranicMasteryInstitut-l6t" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sial Quranic Mastery Institute. All Rights Reserved.</p>
+                <div style="margin-top: 10px;">
+                    <a href="privacy-policy.html"
+                        style="color: #ccc; margin: 0 10px; font-size: 0.8rem; text-decoration: none;">Privacy
+                        Policy</a>
+                    <a href="terms.html"
+                        style="color: #ccc; margin: 0 10px; font-size: 0.8rem; text-decoration: none;">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923027480855"
+        style="position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: var(--shadow-lg); z-index: 1000;"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
