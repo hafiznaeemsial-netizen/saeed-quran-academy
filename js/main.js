@@ -65,7 +65,7 @@ if (contactForm) {
         const msg = document.getElementById('userMsg').value;
 
         // Construct WhatsApp Message
-        const waMessage = `*New Student Registration - Sial Quranic Mastery Institute*%0A%0A` +
+        const waMessage = `*New Student Registration - Saeed Quran Academy*%0A%0A` +
             `*Name:* ${name}%0A` +
             `*Email:* ${email}%0A` +
             `*Phone:* ${phone}%0A` +
