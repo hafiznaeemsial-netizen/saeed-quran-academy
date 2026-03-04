@@ -54,6 +54,12 @@ h6 {
     direction: rtl;
 }
 
+.phone-number {
+    direction: ltr;
+    display: inline-block;
+    unicode-bidi: embed;
+}
+
 a {
     text-decoration: none;
     color: inherit;
