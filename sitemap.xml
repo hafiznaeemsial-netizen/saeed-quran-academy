@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://saeed-quran-academy.vercel.app/article-kids-west-upbringing.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://saeed-quran-academy.vercel.app/article-kids-west-upbringing-en.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://saeed-quran-academy.vercel.app/article-hifz-benefits.html</loc>
     <lastmod>2026-03-05</lastmod>
     <priority>0.8</priority>
@@ -92,7 +102,12 @@
   </url>
   <url>
     <loc>https://saeed-quran-academy.vercel.app/article-tajweed-importance.html</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://saeed-quran-academy.vercel.app/article-tajweed-importance-en.html</loc>
+    <lastmod>2026-03-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
