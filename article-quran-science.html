@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -83,7 +83,7 @@
 </head>
 
 <body>
-    <!-- Top Bar -->
+        <!-- Top Bar -->
     <div style="background: var(--primary-dark); color: white; padding: 5px 0; font-size: 0.8rem;">
         <div class="container" style="display: flex; justify-content: space-between;">
             <div>
@@ -91,7 +91,8 @@
                     class="fas fa-envelope"></i> hafiznaeemsial@gmail.com
             </div>
             <div class="urdu">
-                <i class="fas fa-language"></i> اردو | English
+                <i class="fas fa-language"></i> <a href="blog.html" style="color:var(--secondary-color)">اردو</a> | <a
+                    href="blog-en.html" style="color:var(--secondary-color)">English</a>
             </div>
         </div>
     </div>
@@ -119,7 +120,15 @@
 
     <main class="container" style="margin-top: 50px; margin-bottom: 50px;">
         <div style="max-width: 900px; margin: 0 auto;">
-            <div class="article-meta urdu">
+                        <!-- Breadcrumbs -->
+            <div style="margin-bottom: 20px; font-size: 0.9rem; color: #666;">
+                <a href="index.html" style="color: var(--primary-color); text-decoration: none;">Home</a> 
+                <i class="fas fa-chevron-right" style="font-size: 0.7rem; margin: 0 5px;"></i> 
+                <a href="blog-en.html" style="color: var(--primary-color); text-decoration: none;">English Blog</a> 
+                <i class="fas fa-chevron-right" style="font-size: 0.7rem; margin: 0 5px;"></i> 
+                <span style="color: #999;">Saeed Quran Academy</span>
+            </div>
+<div class="article-meta urdu">
                 <i class="fas fa-calendar-alt"></i> 3 مارچ 2026 | <i class="fas fa-user"></i> تحریر: سعید قرآن اکیڈمی
                 ٹیم
             </div>
@@ -225,18 +234,57 @@
         </div>
     </main>
 
-    <!-- Footer -->
+                <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
+                <div class="footer-col" style="text-align: left;">
                     <h1 style="color: var(--secondary-color); font-size: 1.5rem;">Saeed Quran Academy</h1>
-                    <p style="margin-top: 15px;">آن لائن قرآن اکیڈمی جو پوری دنیا میں قرآنی تعلیمات کی روشنی پھیلانے کے
-                        لئے وقف ہے۔</p>
+                    <p style="margin-top: 15px;">A leading international online Quran academy dedicated to spreading the
+                        light of Quranic education globally.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="pricing.html">Fee Structure</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Our Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Noorani Qaida</a></li>
+                        <li><a href="courses.html">Quran with Tajweed</a></li>
+                        <li><a href="courses.html">Quran Translation</a></li>
+                        <li><a href="courses.html">Hifz Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dehli Gate Multan, Pakistan</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-phone"></i> <span class="phone-number">+92 302
+                            7480855</span></p>
+                    <p style="margin-top: 10px;"><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="https://web.facebook.com/SaeedQuranAcademy" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@SaeedQuranAcademy" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+                <div style="margin-top: 10px;">
+                    <a href="privacy-policy.html"
+                        style="color: #ccc; margin: 0 10px; font-size: 0.8rem; text-decoration: none;">Privacy
+                        Policy</a>
+                    <a href="terms.html"
+                        style="color: #ccc; margin: 0 10px; font-size: 0.8rem; text-decoration: none;">Terms of
+                        Service</a>
+                </div>
             </div>
         </div>
     </footer>

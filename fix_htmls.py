@@ -1,28 +1,7 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+import os
+import re
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Saeed Quran Academy</title>
-    <meta name="description"
-        content="View our academy's gallery showcasing our learning environment, students, and events at Saeed Quran Academy.">
-    <link rel="canonical" href="https://saeed-quran-academy.vercel.app/gallery.html">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVMZ13FFZC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-XVMZ13FFZC');
-    </script>
-</head>
-
-<body>
-        <!-- Top Bar -->
+top_bar_header_content = """    <!-- Top Bar -->
     <div style="background: var(--primary-dark); color: white; padding: 5px 0; font-size: 0.8rem;">
         <div class="container" style="display: flex; justify-content: space-between;">
             <div>
@@ -55,35 +34,9 @@
             </nav>
             <a href="contact.html" class="nav-cta">Free Trial Class</a>
         </div>
-    </header>
+    </header>"""
 
-    <section class="hero" style="padding: 60px 0;">
-        <div class="container">
-            <h1 class="urdu" style="color: var(--secondary-color);">گیلری</h1>
-            <h2 style="color: var(--secondary-color);">Our Academy Gallery</h2>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="card-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
-                <img src="assets/images/hero.png" alt="Saeed Quran Academy Learning" class="fade-in"
-                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-md);">
-                <img src="assets/images/kid-reading.png" alt="Student Reading Quran" class="fade-in"
-                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-md);">
-                <div class="fade-in"
-                    style="background: #eef2f1; width: 100%; height: 250px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="fade-in"
-                    style="background: #eef2f1; width: 100%; height: 250px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--primary-color);">
-                    <i class="fas fa-mosque"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
+footer_nav_content = """    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -96,9 +49,18 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
                         <li><a href="pricing.html">Fee Structure</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Our Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Noorani Qaida</a></li>
+                        <li><a href="courses.html">Quran with Tajweed</a></li>
+                        <li><a href="courses.html">Quran Translation</a></li>
+                        <li><a href="courses.html">Hifz Program</a></li>
                     </ul>
                 </div>
                 <div class="footer-col" style="text-align: left;">
@@ -129,11 +91,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/923027480855"
-        style="position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: var(--shadow-lg); z-index: 1000;"
-        target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Mobile Bottom Navigation -->
     <nav class="mobile-bottom-nav">
         <a href="index.html"><i class="fas fa-home"></i>Home</a>
         <a href="about.html"><i class="fas fa-info-circle"></i>About</a>
@@ -141,7 +99,42 @@
         <a href="blog-en.html"><i class="fas fa-globe"></i>English</a>
         <a href="pricing.html"><i class="fas fa-tags"></i>Fees</a>
         <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
-    </nav>
-</body>
+    </nav>"""
 
-</html>
+def replace_in_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Find the top bar <!-- Top Bar --> down to the end of </header>
+    top_pattern = re.compile(r'<!-- Top Bar -->.*?</header>', re.DOTALL)
+    
+    new_content, count1 = top_pattern.subn(top_bar_header_content, content, count=1)
+
+    # We will match from <!-- Footer --> to the end of <nav class="mobile-bottom-nav">...</nav>
+    footer_pattern = re.compile(r'<!-- Footer -->.*?</body>', re.DOTALL)
+
+    def replacer(match):
+        return footer_nav_content + "\n</body>"
+        
+    new_content, count2 = footer_pattern.subn(replacer, new_content, count=1)
+    
+    # Alternatively some files might have script tags
+    footer_pattern_script = re.compile(r'<!-- Footer -->.*?<script', re.DOTALL)
+    def replacer_script(match):
+        return footer_nav_content + "\n    <script"
+        
+    if count2 == 0:
+        new_content, count2 = footer_pattern_script.subn(replacer_script, new_content, count=1)
+
+    if count1 > 0 or count2 > 0:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"Updated {filepath}")
+
+for root, _, files in os.walk('.'):
+    # skip node_modules, assets, backup, dist etc
+    if 'node_modules' in root or '.git' in root or 'assets' in root or 'css' in root or 'js' in root:
+        continue
+    for f in files:
+        if f.endswith('.html'):
+            replace_in_file(os.path.join(root, f))
