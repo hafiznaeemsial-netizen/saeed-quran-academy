@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,12 +14,14 @@
     <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; gap: 20px;">
-                <span><i class="fas fa-phone"></i> +92 302 7480855</span>
+                <span><i class="fas fa-phone"></i> <span class="phone-number">+92 302 7480855</span></span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
-            <div class="urdu">
-                <a href="blog.html" style="color:var(--secondary-color)">اردو بلاگ</a> |
-                <a href="blog-en.html" style="color:var(--secondary-color)">English Blog</a>
+            <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-language"></i>
+                <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
+                <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
+                <i class="fas fa-language" style="transform: scaleX(-1);"></i>
             </div>
         </div>
     </div>
@@ -28,68 +30,101 @@
     <header>
         <div class="container navbar">
             <div class="logo">
-                <h1 style="color: var(--primary-dark); margin:0;">Saeed Quran Academy</h1>
-                <span class="urdu" style="color: var(--accent-color); font-weight: bold;">سعید قرآن اکیڈمی</span>
+                <div class="logo-text">
+                    <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
+                        قرآن اکیڈمی</span>
+                </div>
             </div>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="blog-en.html" class="active">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="pricing.html">Fees</a>
+                <a href="contact.html">Contact</a>
             </nav>
+            <a href="contact.html" class="nav-cta">Free Trial Class</a>
         </div>
     </header>
 
-    <main class="container" style="padding: 60px 20px;">
-        <div class="section-title">
-            <h2>English Articles</h2>
-            <div class="divider"></div>
+    <main class="container" style="margin-top: 40px; padding-bottom: 50px;">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumb"
+            style="margin-bottom: 30px; font-size: 1rem; color: #666; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+            <a href="index.html" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Home</a>
+            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin: 0 10px; color: #ccc;"></i>
+            <span style="color: #999;">English Blog</span>
         </div>
 
-        <div class="card-grid">
-            <div class="card">
-                <img src="assets/images/teach_quran_kids.png" alt=""
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top:20px;"><a href="article-teach-quran-methods-en.html">5 Ways to Teach Quran to
-                        Kids</a></h3>
-                <a href="article-teach-quran-methods-en.html" style="color: var(--primary-color)">Read More</a>
+        <section>
+            <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-size: 2.8rem; margin-bottom: 10px; color: var(--primary-dark);">Our English Blog</h2>
+                <div class="divider"
+                    style="width: 80px; height: 4px; background: var(--secondary-color); margin: 0 auto;"></div>
             </div>
-            <div class="card">
-                <img src="assets/images/tajweed.png" alt=""
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top:20px;"><a href="article-tajweed-importance-en.html">Importance of Tajweed</a></h3>
-                <a href="article-tajweed-importance-en.html" style="color: var(--primary-color)">Read More</a>
+
+            <div class="card-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- English Article Cards -->
+                <div class="card"
+                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md); text-align: left;">
+                    <img src="assets/images/teach_quran_kids.png" alt="Teach Quran"
+                        style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <h3><a href="article-teach-quran-methods-en.html">5 Best Ways to Teach Quran to Children</a>
+                        </h3>
+                        <p style="color: #666; margin: 15px 0;">A complete guide for parents with practical tips for
+                            kids.</p>
+                        <a href="article-teach-quran-methods-en.html"
+                            style="color: var(--primary-color); font-weight: bold;">Read Full Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card"
+                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md); text-align: left;">
+                    <img src="assets/images/tajweed.png" alt="Tajweed"
+                        style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <h3><a href="article-tajweed-importance-en.html">Importance of Tajweed</a></h3>
+                        <p style="color: #666; margin: 15px 0;">Why it is essential to recite Quran with correct rules.
+                        </p>
+                        <a href="article-tajweed-importance-en.html"
+                            style="color: var(--primary-color); font-weight: bold;">Read Full Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card"
+                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md); text-align: left;">
+                    <img src="assets/images/hifz.png" alt="Hifz" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <h3><a href="article-hifz-benefits-en.html">Benefits of Hifz-e-Quran</a></h3>
+                        <p style="color: #666; margin: 15px 0;">The spiritual rewards and focus benefits of
+                            memorization.</p>
+                        <a href="article-hifz-benefits-en.html"
+                            style="color: var(--primary-color); font-weight: bold;">Read Full Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="assets/images/hifz.png" alt=""
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top:20px;"><a href="article-hifz-benefits-en.html">Benefits of Memorizing Quran</a>
-                </h3>
-                <a href="article-hifz-benefits-en.html" style="color: var(--primary-color)">Read More</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/ramazan.png" alt=""
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top:20px;"><a href="article-ramzan-reflection-en.html">Ramadan Reflections</a></h3>
-                <a href="article-ramzan-reflection-en.html" style="color: var(--primary-color)">Read More</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/tears_mercy.png" alt=""
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top:20px;"><a href="article-tears-mercy-en.html">Tears of Mercy</a></h3>
-                <a href="article-tears-mercy-en.html" style="color: var(--primary-color)">Read More</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/spiritual.png" alt=""
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top:20px;"><a href="article-spiritual-silence.html">Spiritual Silence</a></h3>
-                <a href="article-spiritual-silence.html" style="color: var(--primary-color)">Read More</a>
-            </div>
-        </div>
+        </section>
     </main>
 
-    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
-        <p>&copy; 2026 Saeed Quran Academy</p>
+    <!-- Footer -->
+    <footer
+        style="background: #1a1a1a; color: white; padding: 60px 0 20px; border-top: 5px solid var(--secondary-color);">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923027480855" class="whatsapp-float"
+        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
