@@ -4,93 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Pricing & Fees | Saeed Quran Academy</title>
+    <title>Fee Structure | Saeed Quran Academy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .price-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .price-card.featured {
+            border-color: var(--secondary-color);
+            transform: scale(1.05);
+            position: relative;
+        }
+
+        .price-card.featured .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary-color);
+            color: var(--primary-dark);
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+
+        .price-amount span {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .price-features li {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        .price-features li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVMZ13FFZC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XVMZ13FFZC');
+    </script>
 </head>
 
 <body>
-    <!-- Top Bar & Header (Same as index) -->
-    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="display: flex; gap: 20px;">
-                <span><i class="fas fa-phone"></i> +92 302 7480855</span>
-                <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
+    <!-- Top Bar -->
+    <div style="background: var(--primary-dark); color: white; padding: 5px 0; font-size: 0.8rem;">
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <div>
+                <i class="fas fa-phone"></i> +92 302 7480855 | <i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com
             </div>
             <div class="urdu">
-                <a href="blog.html" style="color:var(--secondary-color)">اردو بلاگ</a> |
-                <a href="blog-en.html" style="color:var(--secondary-color)">English Blog</a>
+                <i class="fas fa-language"></i> اردو | English
             </div>
         </div>
     </div>
+
+    <!-- Navigation -->
     <header>
         <div class="container navbar">
             <div class="logo">
-                <h1 style="color: var(--primary-dark); margin:0;">Saeed Quran Academy</h1>
-                <span class="urdu" style="color: var(--accent-color); font-weight: bold;">سعید قرآن اکیڈمی</span>
+                <div class="logo-text">
+                    <h1>Saeed Quran Academy</h1>
+                    <span class="urdu">سعید قرآن اکیڈمی</span>
+                </div>
             </div>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
                 <a href="blog.html">Blog</a>
-                <a href="pricing.html" class="active">Fees</a>
+                <a href="pricing.html">Fees</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <a href="contact.html" class="nav-cta">Free Trial Class</a>
         </div>
     </header>
 
-    <main class="container" style="padding: 100px 20px;">
-        <h2 style="text-align: center; font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 50px;">Our Fee
-            Structure</h2>
+    <!-- Page Header -->
+    <section class="hero" style="padding: 60px 0;">
+        <div class="container">
+            <h1 class="urdu" style="color: var(--secondary-color);">فیس کا تعین</h1>
+            <h1 style="color: var(--secondary-color);">Affordable Fee Structure</h1>
+            <p>We provide high-quality Quranic education at the most competitive rates globally.</p>
+        </div>
+    </section>
 
-        <div class="pricing-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: center;">
-            <!-- Plan 1 -->
-            <div
-                style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md); border-top: 5px solid var(--primary-color);">
-                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 20px;">Weekly (3 Days)</h3>
-                <div style="font-size: 2.2rem; font-weight: bold; color: var(--accent-color); margin-bottom: 25px;">$30
-                    / mo</div>
-                <ul style="list-style: none; color: var(--text-muted); margin-bottom: 30px;">
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        12 Classes Per Month</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        30 Min Per Class</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i> 1
-                        on 1 Interactive</li>
-                </ul>
-                <a href="contact.html"
-                    style="background: var(--primary-color); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold;">Select
-                    Plan</a>
+    <!-- Pricing Section -->
+    <section>
+        <div class="container">
+            <div class="pricing-table">
+                <!-- International Plan -->
+                <div class="price-card featured">
+                    <div class="badge">INTERNATIONAL STUDENTS</div>
+                    <h3>Standard Plan</h3>
+                    <p>6 Days a Week</p>
+                    <div class="price-amount">$50<span>/month</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 24-26 Classes per month</li>
+                        <li><i class="fas fa-check"></i> 30 Mins sessions</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Personalized Classes</li>
+                        <li><i class="fas fa-check"></i> Single Course focus</li>
+                        <li><i class="fas fa-check"></i> Weekly Progress Report</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="display: block; margin-top: 30px;">Choose
+                        Plan</a>
+                </div>
+
+                <!-- Pakistan Local Plan -->
+                <div class="price-card featured" style="border-color: var(--primary-color);">
+                    <div class="badge" style="background: var(--primary-dark); color: white;">PAKISTAN STUDENTS</div>
+                    <h3>Local Plan</h3>
+                    <p>6 Days a Week</p>
+                    <div class="price-amount">5000<span> PKR/month</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 24-26 Classes per month</li>
+                        <li><i class="fas fa-check"></i> 30 Mins sessions</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Personalized Classes</li>
+                        <li><i class="fas fa-check"></i> Single Course focus</li>
+                        <li><i class="fas fa-check"></i> Weekly Progress Report</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary"
+                        style="display: block; margin-top: 30px; background: var(--primary-dark); color: white;">Choose
+                        Plan</a>
+                </div>
             </div>
 
-            <!-- Plan 2 -->
-            <div
-                style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-lg); border-top: 5px solid var(--secondary-color); transform: scale(1.05);">
-                <div
-                    style="background: var(--secondary-color); color: var(--primary-dark); padding: 5px 15px; border-radius: 20px; display: inline-block; font-size: 0.8rem; font-weight: bold; margin-bottom: 15px;">
-                    Most Popular</div>
-                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 20px;">Weekly (5 Days)</h3>
-                <div style="font-size: 2.2rem; font-weight: bold; color: var(--accent-color); margin-bottom: 25px;">$50
-                    / mo</div>
-                <ul style="list-style: none; color: var(--text-muted); margin-bottom: 30px;">
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        20 Classes Per Month</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        30 Min Per Class</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i> 1
-                        on 1 Interactive</li>
-                </ul>
-                <a href="contact.html"
-                    style="background: var(--primary-color); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold;">Select
-                    Plan</a>
+            <div style="margin-top: 50px; text-align: center; background: #fffde7; padding: 30px; border-radius: 15px;">
+                <h3 class="urdu" style="color: #f57f17;">خصوصی رعایت</h3>
+                <h3 style="color: #f57f17;">Special Discounts</h3>
+                <p>We offer <strong>10% discount</strong> for siblings and <strong>free education</strong> for orphans
+                    and deserving students. Please contact us for details.</p>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
-        <p>&copy; 2026 Saeed Quran Academy</p>
+    <!-- Payment Methods -->
+    <section style="background: #f9f9f9;">
+        <div class="container" style="text-align: center;">
+            <h2>Accepted Payment Methods</h2>
+            <div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px; flex-wrap: wrap;">
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"
+                        style="height: 30px;">
+                </div>
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"
+                        style="height: 30px;">
+                </div>
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <p style="font-weight: bold; color: #cc0000;">JazzCash</p>
+                </div>
+                <div
+                    style="padding: 20px; background: white; border-radius: 10px; width: 150px; box-shadow: var(--shadow-sm);">
+                    <p style="font-weight: bold; color: #00bf63;">EasyPaisa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer ... same as index.html -->
+    <footer style="margin-top: 50px;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h1 style="color: var(--secondary-color); font-size: 1.5rem;">Saeed Quran Academy</h1>
+                    <p style="margin-top: 15px;">A leading international online Quran academy dedicated to spreading the
+                        light of Quranic education globally.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="pricing.html">Fee Structure</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dehli Gate Multan, Pakistan</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-phone"></i> +92 302 7480855</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="https://web.facebook.com/SaeedQuranAcademy" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@SaeedQuranAcademy" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+                <div style="margin-top: 10px;">
+                    <a href="privacy-policy.html"
+                        style="color: #ccc; margin: 0 10px; font-size: 0.8rem; text-decoration: none;">Privacy
+                        Policy</a>
+                    <a href="terms.html"
+                        style="color: #ccc; margin: 0 10px; font-size: 0.8rem; text-decoration: none;">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923027480855"
+        style="position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: var(--shadow-lg); z-index: 1000;"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
