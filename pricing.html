@@ -4,93 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Pricing & Fees | Saeed Quran Academy</title>
+    <title>Fee Structure | Saeed Quran Academy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Top Bar & Header (Same as index) -->
+    <!-- Top Bar -->
     <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; gap: 20px;">
                 <span><i class="fas fa-phone"></i> +92 302 7480855</span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
-            <div class="urdu">
-                <a href="blog.html" style="color:var(--secondary-color)">اردو بلاگ</a> |
-                <a href="blog-en.html" style="color:var(--secondary-color)">English Blog</a>
+            <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-language"></i>
+                <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
+                <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
             </div>
         </div>
     </div>
+
+    <!-- Navigation -->
     <header>
         <div class="container navbar">
             <div class="logo">
-                <h1 style="color: var(--primary-dark); margin:0;">Saeed Quran Academy</h1>
-                <span class="urdu" style="color: var(--accent-color); font-weight: bold;">سعید قرآن اکیڈمی</span>
+                <div class="nav-brand">
+                    <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
+                        قرآن اکیڈمی</span>
+                </div>
             </div>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="blog.html">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="blog.html">Urdu Blog</a>
                 <a href="pricing.html" class="active">Fees</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <a href="contact.html" class="nav-cta">Free Trial Class</a>
         </div>
     </header>
 
-    <main class="container" style="padding: 100px 20px;">
-        <h2 style="text-align: center; font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 50px;">Our Fee
-            Structure</h2>
+    <!-- Page Header -->
+    <section
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/pricing-bg.jpg'); background-size: cover; background-position: center; padding: 80px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Affordable Fee Structure</h1>
+            <div style="font-size: 1.1rem;">
+                <a href="index.html" style="color: var(--secondary-color); text-decoration: none;">Home</a>
+                <i class="fas fa-chevron-right" style="margin: 0 10px; font-size: 0.8rem;"></i>
+                <span>Fees</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container" style="padding: 80px 20px;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="color: var(--primary-dark); font-size: 2.5rem;">Choose Your Plan</h2>
+            <p style="color: #666; max-width: 700px; margin: 15px auto;">We offer highly competitive and affordable fee
+                packages to ensure quality education is accessible for everyone.</p>
+
+            <h2 class="urdu" style="color: var(--primary-dark); font-size: 2.2rem; margin-top: 30px;">ہمارا فیس اسٹرکچر
+            </h2>
+            <p class="urdu" style="font-size: 1.25rem; color: #666; max-width: 700px; margin: 15px auto;">ہم نے انتہائی
+                مناسب اور سستی فیس کے پیکجز تیار کیے ہیں تاکہ معیاری تعلیم ہر ایک کی پہنچ میں ہو۔</p>
+        </div>
 
         <div class="pricing-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: center;">
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 60px;">
             <!-- Plan 1 -->
             <div
-                style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md); border-top: 5px solid var(--primary-color);">
-                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 20px;">Weekly (3 Days)</h3>
-                <div style="font-size: 2.2rem; font-weight: bold; color: var(--accent-color); margin-bottom: 25px;">$30
-                    / mo</div>
-                <ul style="list-style: none; color: var(--text-muted); margin-bottom: 30px;">
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        12 Classes Per Month</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        30 Min Per Class</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i> 1
-                        on 1 Interactive</li>
+                style="background: white; padding: 50px 40px; border-radius: 30px; box-shadow: var(--shadow-lg); border-top: 8px solid var(--primary-color); text-align: center; position: relative; transition: 0.3s;">
+                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 10px;">Weekly (3 Days)</h3>
+                <p style="color: #999; margin-bottom: 25px;">Basic Learning Package</p>
+                <div style="font-size: 3rem; font-weight: bold; color: var(--accent-color); margin-bottom: 30px;">
+                    $30<span style="font-size: 1rem; color: #999;">/mo</span></div>
+                <ul style="list-style: none; padding: 0; margin-bottom: 40px; text-align: left; display: inline-block;">
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 12 Classes Per Month</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 30 Minutes Per Class</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 1-on-1 Personalized Session</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> Flexible Class Timings</li>
                 </ul>
-                <a href="contact.html"
-                    style="background: var(--primary-color); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold;">Select
-                    Plan</a>
+                <a href="contact.html" class="btn btn-primary"
+                    style="display: block; width: 100%; text-decoration: none; padding: 15px 0; border-radius: 10px; font-weight: bold;">Enroll
+                    Now</a>
             </div>
 
-            <!-- Plan 2 -->
+            <!-- Plan 2 (Featured) -->
             <div
-                style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-lg); border-top: 5px solid var(--secondary-color); transform: scale(1.05);">
+                style="background: white; padding: 50px 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-top: 8px solid var(--secondary-color); text-align: center; position: relative; border-bottom: 8px solid var(--secondary-color); transform: scale(1.05); z-index: 10;">
                 <div
-                    style="background: var(--secondary-color); color: var(--primary-dark); padding: 5px 15px; border-radius: 20px; display: inline-block; font-size: 0.8rem; font-weight: bold; margin-bottom: 15px;">
-                    Most Popular</div>
-                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 20px;">Weekly (5 Days)</h3>
-                <div style="font-size: 2.2rem; font-weight: bold; color: var(--accent-color); margin-bottom: 25px;">$50
-                    / mo</div>
-                <ul style="list-style: none; color: var(--text-muted); margin-bottom: 30px;">
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        20 Classes Per Month</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i>
-                        30 Min Per Class</li>
-                    <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary-color);"></i> 1
-                        on 1 Interactive</li>
+                    style="background: var(--secondary-color); color: var(--primary-dark); padding: 8px 20px; border-radius: 30px; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 0.85rem; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    MOST POPULAR</div>
+                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 10px;">Weekly (5 Days)</h3>
+                <p style="color: #999; margin-bottom: 25px;">Advanced Learning Package</p>
+                <div style="font-size: 3rem; font-weight: bold; color: var(--accent-color); margin-bottom: 30px;">
+                    $50<span style="font-size: 1rem; color: #999;">/mo</span></div>
+                <ul style="list-style: none; padding: 0; margin-bottom: 40px; text-align: left; display: inline-block;">
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 20 Classes Per Month</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 30 Minutes Per Class</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 1-on-1 Personalized Session</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> Priority Support</li>
                 </ul>
-                <a href="contact.html"
-                    style="background: var(--primary-color); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold;">Select
-                    Plan</a>
+                <a href="contact.html" class="btn btn-accent"
+                    style="display: block; width: 100%; text-decoration: none; padding: 15px 0; border-radius: 10px; font-weight: bold; background: var(--secondary-color); color: var(--primary-dark);">Enroll
+                    Now</a>
             </div>
+
+            <!-- Weekend Plan -->
+            <div
+                style="background: white; padding: 50px 40px; border-radius: 30px; box-shadow: var(--shadow-lg); border-top: 8px solid #34495e; text-align: center; position: relative;">
+                <h3 style="color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 10px;">Weekend (Sat/Sun)</h3>
+                <p style="color: #999; margin-bottom: 25px;">Special Weekend Package</p>
+                <div style="font-size: 3rem; font-weight: bold; color: var(--accent-color); margin-bottom: 30px;">
+                    $25<span style="font-size: 1rem; color: #999;">/mo</span></div>
+                <ul style="list-style: none; padding: 0; margin-bottom: 40px; text-align: left; display: inline-block;">
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 8 Classes Per Month</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> 45 Minutes Per Class</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> Detailed Weekend Study</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                            style="color: #2ecc71; margin-right: 15px;"></i> Perfect for Busy Professionals</li>
+                </ul>
+                <a href="contact.html" class="btn btn-secondary"
+                    style="display: block; width: 100%; text-decoration: none; padding: 15px 0; border-radius: 10px; font-weight: bold; border: 1px solid #34495e; color: #34495e; background: transparent;">Enroll
+                    Now</a>
+            </div>
+        </div>
+
+        <!-- Custom Plan CTA -->
+        <div
+            style="background: var(--primary-dark); color: white; padding: 60px; border-radius: 30px; text-align: center; margin-top: 40px;">
+            <h2 style="margin-bottom: 20px;">Need a Custom Plan?</h2>
+            <p style="color: #bbb; margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto;">If you
+                have multiple children or want a custom schedule, contact us for special family discounts.</p>
+            <a href="contact.html" class="btn btn-secondary"
+                style="background: var(--secondary-color); color: var(--primary-dark); font-weight: bold; padding: 15px 40px; border-radius: 50px; text-decoration: none; display: inline-block; border: none;">Contact
+                for Custom Quote</a>
         </div>
     </main>
 
-    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
-        <p>&copy; 2026 Saeed Quran Academy</p>
+    <!-- Footer -->
+    <footer style="background: #1a1a1a; color: white; padding: 80px 0 0; border-top: 5px solid var(--secondary-color);">
+        <div class="container">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; margin-bottom: 60px;">
+                <div class="footer-col" style="text-align: left;">
+                    <h1 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 20px;">Saeed Quran Academy
+                    </h1>
+                    <p style="color: #bbb; line-height: 1.8;">Leading online Islamic academy providing 1-on-1 Quran,
+                        Tajweed, and Islamic studies to students of all ages across the globe.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3 style="color: white; margin-bottom: 25px;">Contact Info</h3>
+                    <p style="color: #bbb; margin-bottom: 15px;"><i class="fas fa-phone"
+                            style="color: var(--secondary-color); margin-right: 15px;"></i> +92 302 7480855</p>
+                    <p style="color: #bbb; margin-bottom: 15px;"><i class="fas fa-envelope"
+                            style="color: var(--secondary-color); margin-right: 15px;"></i> hafiznaeemsial@gmail.com</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid #333; padding: 25px 0; text-align: center; color: #777; font-size: 0.9rem;">
+                <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923027480855" class="whatsapp-float"
+        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>

@@ -1,107 +1,159 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faqs | Saeed Quran Academy</title>
+    <title>Frequently Asked Questions | Saeed Quran Academy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVMZ13FFZC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XVMZ13FFZC');
-    </script>
+    <style>
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .faq-item h3 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Top Bar -->
-    <div style="background: var(--primary-dark); color: white; padding: 5px 0; font-size: 0.8rem;">
+    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="display: flex; gap: 15px;">
-                <span><i class="fas fa-phone"></i> <span class="phone-number">+92 302 7480855</span></span>
+            <div style="display: flex; gap: 20px;">
+                <span><i class="fas fa-phone"></i> +92 302 7480855</span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
-            <div class="urdu" style="display: flex; align-items: center; gap: 10px;">
-                <i class="fas fa-language"></i> 
-                <a href="blog.html" style="color:var(--secondary-color)">اردو</a> | 
-                <a href="blog-en.html" style="color:var(--secondary-color)">English</a>
-                <i class="fas fa-language" style="transform: scaleX(-1);"></i>
+            <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-language"></i>
+                <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
+                <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
             </div>
         </div>
     </div>
+
     <!-- Navigation -->
     <header>
         <div class="container navbar">
             <div class="logo">
-                <div class="logo-text">
-                    <h1 style="color: var(--primary-dark); margin:0;">Saeed Quran Academy</h1>
-                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.2rem;">سعید قرآن اکیڈمی</span>
+                <div class="nav-brand">
+                    <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
+                        قرآن اکیڈمی</span>
                 </div>
             </div>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="blog.html">Urdu Blog</a>
-                <a href="blog-en.html">English Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
                 <a href="pricing.html">Fees</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <a href="contact.html" class="nav-cta">Free Trial Class</a>
         </div>
     </header>
-<main class="container" style="margin-top: 50px; padding: 20px;">
 
-<h1>Faqs</h1>
-<p>Website content is being updated. Please check back soon.</p>
-</main>
+    <main class="container" style="padding: 80px 20px;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="color: var(--primary-dark); font-size: 2.5rem;">Have Questions? We Have Answers</h2>
+            <div class="divider" style="margin: 20px auto;"></div>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <h3>What is the duration of each class?</h3>
+                <p>Standard classes are 30 minutes long, but we can adjust this according to the student's needs and
+                    concentration level.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you provide female teachers for sisters and kids?</h3>
+                <p>Yes, we have a dedicated team of highly qualified female teachers available for our sisters and young
+                    children.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I pay the fee?</h3>
+                <p>We accept payments through various secure methods including PayPal, Bank Transfer, and Western Union,
+                    depending on your location.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there any registration fee?</h3>
+                <p>No, there is absolutely no registration fee. You only pay for the classes after your 3-day free
+                    trial.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What equipment do I need for online classes?</h3>
+                <p>All you need is a smartphone, tablet, or laptop with a stable internet connection and a pair of
+                    headphones for better sound quality.</p>
+            </div>
+
+            <h2 class="urdu"
+                style="text-align: right; color: var(--primary-dark); margin-top: 50px; margin-bottom: 30px;">عام طور پر
+                پوچھے جانے والے سوالات</h2>
+
+            <div class="faq-item"
+                style="text-align: right; border-left: none; border-right: 5px solid var(--accent-color);">
+                <h3 class="urdu">کیا میں اپنی مرضی کا وقت منتخب کر سکتا ہوں؟</h3>
+                <p class="urdu">جی ہاں! ہماری اکیڈمی 24 گھنٹے کام کرتی ہے، آپ اپنی سہولت کے مطابق کوئی بھی وقت منتخب کر
+                    سکتے ہیں۔</p>
+            </div>
+            <div class="faq-item"
+                style="text-align: right; border-left: none; border-right: 5px solid var(--accent-color);">
+                <h3 class="urdu">کیا بچے کی پڑھائی کی رپورٹ والدین کو دی جاتی ہے؟</h3>
+                <p class="urdu">جی ہاں، ہم ماہانہ بنیادوں پر بچے کی کارکردگی کی رپورٹ والدین کو فراہم کرتے ہیں۔</p>
+            </div>
+        </div>
+    </main>
+
     <!-- Footer -->
-    <footer>
+    <footer style="background: #1a1a1a; color: white; padding: 80px 0 0; border-top: 5px solid var(--secondary-color);">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; margin-bottom: 60px;">
                 <div class="footer-col" style="text-align: left;">
-                    <h1 style="color: var(--secondary-color); font-size: 1.5rem;">Saeed Quran Academy</h1>
-                    <p style="margin-top: 15px;">A leading international online Quran academy dedicated to spreading the light of Quranic education globally.</p>
+                    <h1 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 20px;">Saeed Quran Academy
+                    </h1>
+                    <p style="color: #bbb; line-height: 1.8;">Leading online Islamic academy providing 1-on-1 Quran,
+                        Tajweed, and Islamic studies to students of all ages across the globe.</p>
                 </div>
                 <div class="footer-col" style="text-align: left;">
-                    <h4 style="border-bottom: 2px solid var(--secondary-color); display: inline-block; margin-bottom: 15px;">Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="courses.html">Our Courses</a></li>
-                        <li><a href="pricing.html">Fee Structure</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <h3 style="color: white; margin-bottom: 25px;">Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px;"><a href="index.html"
+                                style="color: #bbb; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 15px;"><a href="blog.html"
+                                style="color: #bbb; text-decoration: none;">Urdu Blog</a></li>
+                        <li style="margin-bottom: 15px;"><a href="contact.html"
+                                style="color: #bbb; text-decoration: none;">Contact</a></li>
                     </ul>
-                </div>
-                <div class="footer-col" style="text-align: left;">
-                    <h4 style="border-bottom: 2px solid var(--secondary-color); display: inline-block; margin-bottom: 15px;">Our Courses</h4>
-                    <ul>
-                        <li><a href="courses.html">Noorani Qaida</a></li>
-                        <li><a href="courses.html">Quran with Tajweed</a></li>
-                        <li><a href="courses.html">Quran Translation</a></li>
-                        <li><a href="courses.html">Hifz Program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col" style="text-align: left;">
-                    <h4 style="border-bottom: 2px solid var(--secondary-color); display: inline-block; margin-bottom: 15px;">Contact Us</h4>
-                    <p><i class="fas fa-map-marker-alt" style="color: var(--secondary-color);"></i> Dehli Gate Multan, Pakistan</p>
-                    <p style="margin-top: 10px;"><i class="fas fa-phone" style="color: var(--secondary-color);"></i> +92 302 7480855</p>
-                    <p style="margin-top: 10px;"><i class="fas fa-envelope" style="color: var(--secondary-color);"></i> hafiznaeemsial@gmail.com</p>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div
+                style="border-top: 1px solid #333; padding: 25px 0; text-align: center; color: #777; font-size: 0.9rem;">
                 <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    <a href="https://wa.me/923027480855" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <nav class="mobile-bottom-nav">
-        <a href="index.html"><i class="fas fa-home"></i>Home</a>
-        <a href="about.html"><i class="fas fa-info-circle"></i>About</a>
-        <a href="blog.html"><i class="fas fa-blog"></i>Urdu</a>
-        <a href="blog-en.html"><i class="fas fa-globe"></i>English</a>
-        <a href="pricing.html"><i class="fas fa-tags"></i>Fees</a>
-        <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
-    </nav>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923027480855" class="whatsapp-float"
+        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
+
 </html>

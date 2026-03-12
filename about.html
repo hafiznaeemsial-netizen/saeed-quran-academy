@@ -17,65 +17,148 @@
                 <span><i class="fas fa-phone"></i> +92 302 7480855</span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
-            <div class="urdu">
-                <a href="blog.html" style="color:var(--secondary-color)">اردو بلاگ</a> |
-                <a href="blog-en.html" style="color:var(--secondary-color)">English Blog</a>
+            <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-language"></i>
+                <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
+                <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
             </div>
         </div>
     </div>
+
+    <!-- Navigation -->
     <header>
         <div class="container navbar">
             <div class="logo">
-                <h1 style="color: var(--primary-dark); margin:0;">Saeed Quran Academy</h1>
-                <span class="urdu" style="color: var(--accent-color); font-weight: bold;">سعید قرآن اکیڈمی</span>
+                <div class="nav-brand">
+                    <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
+                        قرآن اکیڈمی</span>
+                </div>
             </div>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About Us</a>
-                <a href="blog.html">Blog</a>
+                <a href="blog.html">Urdu Blog</a>
                 <a href="pricing.html">Fees</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <a href="contact.html" class="nav-cta">Free Trial Class</a>
         </div>
     </header>
 
-    <main class="container" style="padding: 100px 20px;">
-        <div style="max-width: 900px; margin: auto;">
-            <h2 style="font-size: 2.8rem; color: var(--primary-dark); margin-bottom: 30px; text-align: center;">About
-                Our Academy</h2>
-            <img src="assets/images/about_academy.png" alt="About Saeed Quran Academy"
-                style="width: 100%; border-radius: 15px; margin-bottom: 40px; box-shadow: var(--shadow-md);">
+    <!-- Page Header (Shared across core pages) -->
+    <section
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/about-bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">About Us</h1>
+            <div style="font-size: 1.1rem;">
+                <a href="index.html" style="color: var(--secondary-color); text-decoration: none;">Home</a>
+                <i class="fas fa-chevron-right" style="margin: 0 10px; font-size: 0.8rem;"></i>
+                <span>About Us</span>
+            </div>
+        </div>
+    </section>
 
-            <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 25px;">Saeed Quran Academy is a global leader
-                in online Quranic education. Our mission is to provide high-quality, authentic Quranic learning to
-                children and adults in the comfort of their homes.</p>
+    <main class="container" style="padding: 80px 20px;">
+        <div
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 80px;">
+            <div class="about-text">
+                <h2 style="color: var(--primary-dark); margin-bottom: 20px; font-size: 2.5rem;">Who We Are</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-bottom: 30px;">Saeed Quran Academy is
+                    a dedicated online platform committed to providing authentic Islamic and Quranic education to
+                    students worldwide. We believe that everyone should have access to the words of Allah, regardless of
+                    their location or busy schedule.</p>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px;">
-                <div>
-                    <h3 style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 20px;">Our Vision</h3>
-                    <p style="color: var(--text-muted);">To become the most trusted platform for Quranic excellence,
-                        bridging the gap between students and qualified scholars worldwide.</p>
+                <h2 class="urdu"
+                    style="color: var(--primary-dark); margin-bottom: 20px; font-size: 2.2rem; text-align: right;">ہم
+                    کون ہیں؟</h2>
+                <p class="urdu" style="font-size: 1.25rem; line-height: 2; color: #555; text-align: right;">سعید قرآن
+                    اکیڈمی ایک بہترین آن لائن پلیٹ فارم ہے جہاں دنیا بھر کے طالب علموں کو مستند اسلامی اور قرآنی تعلیم
+                    دی جاتی ہے۔ ہمارا مقصد گھر بیٹھے آپ تک دینِ اسلام کی روشن تعلیمات پہنچانا ہے تاکہ آپ اپنی مصروفیات
+                    کے باوجود اللہ کے کلام سے جڑے رہیں۔</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/about_academy.png" alt="Saeed Quran Academy"
+                    style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div
+            style="background: #fdfdfd; padding: 60px; border-radius: 30px; margin-bottom: 80px; box-shadow: var(--shadow-sm);">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: var(--primary-dark);">Our Excellence</h2>
+                <div class="divider" style="margin: 15px auto;"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div
+                    style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                    <i class="fas fa-user-graduate"
+                        style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                    <h3>Qualified Teachers</h3>
+                    <p>Experienced male and female instructors certified from Al-Azhar and recognized institutions.</p>
                 </div>
-                <div>
-                    <h3 style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 20px;">Why Choose Us?</h3>
-                    <ul style="color: var(--text-muted); list-style: none;">
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
-                                style="color: var(--primary-color); margin-right: 10px;"></i> Certified Male & Female
-                            Teachers</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
-                                style="color: var(--primary-color); margin-right: 10px;"></i> 1-on-1 Interactive Classes
-                        </li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
-                                style="color: var(--primary-color); margin-right: 10px;"></i> Flexible Scheduling</li>
-                    </ul>
+                <div
+                    style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                    <i class="fas fa-clock"
+                        style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                    <h3>Flexible Timing</h3>
+                    <p>Classes available 24/7 to suit your timezone and personal schedule.</p>
+                </div>
+                <div
+                    style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                    <i class="fas fa-laptop-house"
+                        style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                    <h3>1-on-1 Classes</h3>
+                    <p>Individual attention to ensure perfect pronunciation and understanding.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
-        <p>&copy; 2026 Saeed Quran Academy</p>
+    <!-- Footer -->
+    <footer style="background: #1a1a1a; color: white; padding: 80px 0 0; border-top: 5px solid var(--secondary-color);">
+        <div class="container">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; margin-bottom: 60px;">
+                <div class="footer-col" style="text-align: left;">
+                    <h1 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 20px;">Saeed Quran Academy
+                    </h1>
+                    <p style="color: #bbb; line-height: 1.8;">Leading online Islamic academy providing 1-on-1 Quran,
+                        Tajweed, and Islamic studies to students of all ages across the globe.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3 style="color: white; margin-bottom: 25px;">Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px;"><a href="index.html"
+                                style="color: #bbb; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 15px;"><a href="blog.html"
+                                style="color: #bbb; text-decoration: none;">Urdu Blog</a></li>
+                        <li style="margin-bottom: 15px;"><a href="pricing.html"
+                                style="color: #bbb; text-decoration: none;">Fee Structure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3 style="color: white; margin-bottom: 25px;">Contact Info</h3>
+                    <p style="color: #bbb; margin-bottom: 15px;"><i class="fas fa-phone"
+                            style="color: var(--secondary-color); margin-right: 15px;"></i> +92 302 7480855</p>
+                    <p style="color: #bbb; margin-bottom: 15px;"><i class="fas fa-envelope"
+                            style="color: var(--secondary-color); margin-right: 15px;"></i> hafiznaeemsial@gmail.com</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid #333; padding: 25px 0; text-align: center; color: #777; font-size: 0.9rem;">
+                <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923027480855" class="whatsapp-float"
+        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
