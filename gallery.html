@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Saeed Quran Academy</title>
+    <meta name="description" content="A glimpse into online classes and activities at Saeed Quran Academy.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Top Bar -->
-    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
+    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem; position: fixed; top: 0; width: 100%; z-index: 1001;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; gap: 20px;">
                 <span><i class="fas fa-phone"></i> +92 302 7480855</span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
             <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
-                <i class="fas fa-language"></i>
                 <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
                 <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
             </div>
@@ -26,13 +26,12 @@
     </div>
 
     <!-- Navigation -->
-    <header>
+    <header style="margin-top: 40px;">
         <div class="container navbar">
             <div class="logo">
-                <div class="nav-brand">
+                <div class="logo-text">
                     <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
-                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
-                        قرآن اکیڈمی</span>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید قرآن اکیڈمی</span>
                 </div>
             </div>
             <nav class="nav-links">
@@ -46,88 +45,76 @@
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section
-        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/gallery-bg.jpg'); background-size: cover; background-position: center; padding: 80px 0; color: white; text-align: center;">
-        <div class="container">
-            <h1 style="font-size: 3rem; margin-bottom: 20px;">Learning Gallery</h1>
-            <div style="font-size: 1.1rem;">
-                <a href="index.html" style="color: var(--secondary-color); text-decoration: none;">Home</a>
-                <i class="fas fa-chevron-right" style="margin: 0 10px; font-size: 0.8rem;"></i>
-                <span>Gallery</span>
+    <main>
+        <!-- Page Header -->
+        <section style="background: var(--bg-white); padding: 80px 0; border-bottom: 2px solid #eee;">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Learning Gallery</h1>
+                <p style="font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto;">A glimpse into our online classes, student achievements, and the environment of learning we foster globally.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <main class="container" style="padding: 80px 20px;">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <h2 style="color: var(--primary-dark); font-size: 2.5rem;">Memories & Moments</h2>
-            <div class="divider" style="margin: 20px auto;"></div>
-            <p style="color: #666; max-width: 700px; margin: 0 auto;">A glimpse into our online classes, student
-                achievements, and the environment of learning we foster globally.</p>
-        </div>
-
-        <!-- Gallery Grid -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px;">
-            <div class="gallery-item" style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                <img src="assets/images/teach_quran_kids.png" alt="Class Moment"
-                    style="width: 100%; height: 300px; object-fit: cover; transition: 0.3s;">
+        <section style="padding: 100px 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px;">
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/teach_quran_kids.png" alt="Class Moment" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/tajweed.png" alt="Tajweed Lesson" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/ramazan.png" alt="Ramadan" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item" style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                <img src="assets/images/best_age_quran.png" alt="Student Learning"
-                    style="width: 100%; height: 300px; object-fit: cover; transition: 0.3s;">
-            </div>
-            <div class="gallery-item" style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                <img src="assets/images/ramazan.png" alt="Event"
-                    style="width: 100%; height: 300px; object-fit: cover; transition: 0.3s;">
-            </div>
-            <div class="gallery-item" style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                <img src="assets/images/quran_reading_kid.png" alt="Recitation"
-                    style="width: 100%; height: 300px; object-fit: cover; transition: 0.3s;">
-            </div>
-            <div class="gallery-item" style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                <img src="assets/images/hifz.png" alt="Hifz Session"
-                    style="width: 100%; height: 300px; object-fit: cover; transition: 0.3s;">
-            </div>
-            <div class="gallery-item" style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-sm);">
-                <img src="assets/images/tajweed.png" alt="Tajweed Lesson"
-                    style="width: 100%; height: 300px; object-fit: cover; transition: 0.3s;">
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer style="background: #1a1a1a; color: white; padding: 80px 0 0; border-top: 5px solid var(--secondary-color);">
+    <footer>
         <div class="container">
-            <div class="footer-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; margin-bottom: 60px;">
-                <div class="footer-col" style="text-align: left;">
-                    <h1 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 20px;">Saeed Quran Academy
-                    </h1>
-                    <p style="color: #bbb; line-height: 1.8;">Leading online Islamic academy providing 1-on-1 Quran,
-                        Tajweed, and Islamic studies to students of all ages across the globe.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 style="color: var(--secondary-color); font-size: 1.8rem;">Saeed Quran Academy</h3>
+                    <p style="margin-top: 20px; line-height: 1.8; color: #bbb;">Leading international online Quran academy dedicated to spreading the light of Quranic education globally.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
+                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
+                        <li style="margin-bottom: 12px;"><a href="courses.html">Courses</a></li>
+                        <li style="margin-bottom: 12px;"><a href="pricing.html">Fees</a></li>
+                    </ul>
                 </div>
                 <div class="footer-col" style="text-align: left;">
-                    <h3 style="color: white; margin-bottom: 25px;">Contact Info</h3>
-                    <p style="color: #bbb; margin-bottom: 15px;"><i class="fas fa-phone"
-                            style="color: var(--secondary-color); margin-right: 15px;"></i> +92 302 7480855</p>
-                    <p style="color: #bbb; margin-bottom: 15px;"><i class="fas fa-envelope"
-                            style="color: var(--secondary-color); margin-right: 15px;"></i> hafiznaeemsial@gmail.com</p>
+                    <h3>Support & Legal</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px;"><a href="contact.html">Contact Us</a></li>
+                        <li style="margin-bottom: 12px;"><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li style="margin-bottom: 12px;"><a href="terms.html">Terms & Conditions</a></li>
+                        <li style="margin-bottom: 12px;"><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3>Contact Information</h3>
+                    <p style="margin-bottom: 15px; color: #bbb;"><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 15px;"></i> +92 302 7480855</p>
+                    <p style="margin-bottom: 15px; color: #bbb;"><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 15px;"></i> hafiznaeemsial@gmail.com</p>
                 </div>
             </div>
-            <div
-                style="border-top: 1px solid #333; padding: 25px 0; text-align: center; color: #777; font-size: 0.9rem;">
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; color: #777;">
                 <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923027480855" class="whatsapp-float"
-        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
-        target="_blank">
+    <a href="https://wa.me/923027480855" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
