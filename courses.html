@@ -5,33 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Courses | Saeed Quran Academy</title>
+    <meta name="description" content="Explore our online Quran courses including Noorani Qaida, Tajweed, Hifz, and Islamic Studies. Male and female teachers available.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Top Bar -->
-    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
+    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem; position: fixed; top: 0; width: 100%; z-index: 1001;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; gap: 20px;">
                 <span><i class="fas fa-phone"></i> +92 302 7480855</span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
-            <div class="urdu">
-                <a href="blog.html" style="color:var(--secondary-color)">اردو بلاگ</a> |
-                <a href="blog-en.html" style="color:var(--secondary-color)">English Blog</a>
+            <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
+                <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
+                <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
             </div>
         </div>
     </div>
 
     <!-- Navigation -->
-    <header>
+    <header style="margin-top: 40px;">
         <div class="container navbar">
             <div class="logo">
                 <div class="logo-text">
                     <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
-                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
-                        قرآن اکیڈمی</span>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید قرآن اکیڈمی</span>
                 </div>
             </div>
             <nav class="nav-links">
@@ -45,61 +45,83 @@
         </div>
     </header>
 
-    <main class="container" style="padding: 80px 20px;">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <h2 style="font-size: 2.8rem; color: var(--primary-dark);">Our Specialized Courses</h2>
-            <div class="divider"
-                style="background: var(--secondary-color); width: 60px; height: 4px; margin: 20px auto;"></div>
-        </div>
-
-        <div class="card-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <!-- Simple Course Cards -->
-            <div class="card">
-                <i class="fas fa-book-open card-icon"></i>
-                <h3>Noorani Qaida</h3>
-                <p style="color: #666; margin-bottom: 15px;">Ideal for beginners to learn Arabic alphabets and
-                    pronunciation.</p>
-                <div class="urdu" style="font-size: 1.25rem;">نورانی قاعدہ</div>
+    <main>
+        <!-- Page Header -->
+        <section style="background: var(--bg-white); padding: 80px 0; border-bottom: 2px solid #eee;">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Our Specialized Courses</h1>
+                <p style="font-size: 1.25rem; color: #666; max-width: 800px; margin: 0 auto;">We offer a range of courses designed to cater to every step of your spiritual journey.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <i class="fas fa-quran card-icon"></i>
-                <h3>Quran with Tajweed</h3>
-                <p style="color: #666; margin-bottom: 15px;">Master the art of reciting the Holy Quran with perfect
-                    rules.</p>
-                <div class="urdu" style="font-size: 1.25rem;">ناظرہ قرآن مع تجوید</div>
+        <!-- Courses Grid -->
+        <section style="padding: 100px 0;">
+            <div class="container">
+                <div class="card-grid">
+                    <!-- Course 1 -->
+                    <div class="card">
+                        <i class="fas fa-book-open" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 25px;"></i>
+                        <h3>Noorani Qaida</h3>
+                        <p style="margin-bottom: 20px; color: #666;">The foundational course for absolute beginners to master Arabic pronunciation and alphabets.</p>
+                        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+                        <h4 class="urdu" style="color: var(--accent-color);">نورانی قاعدہ</h4>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="card">
+                        <i class="fas fa-quran" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 25px;"></i>
+                        <h3>Nazra Quran</h3>
+                        <p style="margin-bottom: 20px; color: #666;">Reading the Holy Quran with correct Tajweed rules and rhythmic recitation.</p>
+                        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+                        <h4 class="urdu" style="color: var(--accent-color);">ناظرہ قرآن مع تجوید</h4>
+                    </div>
+                    <!-- Course 3 -->
+                    <div class="card">
+                        <i class="fas fa-heart" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 25px;"></i>
+                        <h3>Hifz-e-Quran</h3>
+                        <p style="margin-bottom: 20px; color: #666;">A structured path to memorizing the Holy Quran by heart with specialized tutors.</p>
+                        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+                        <h4 class="urdu" style="color: var(--accent-color);">حفظِ قرآن</h4>
+                    </div>
+                    <!-- Course 4 -->
+                    <div class="card">
+                        <i class="fas fa-star-and-crescent" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 25px;"></i>
+                        <h3>Islamic Studies</h3>
+                        <p style="margin-bottom: 20px; color: #666;">Basic Fiqh, Dua, Hadith, and Islamic manners for kids and new Muslims.</p>
+                        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+                        <h4 class="urdu" style="color: var(--accent-color);">بنیادی اسلامی تعلیمات</h4>
+                    </div>
+                </div>
             </div>
-
-            <div class="card">
-                <i class="fas fa-heart card-icon"></i>
-                <h3>Hifz Program</h3>
-                <p style="color: #666; margin-bottom: 15px;">Memorize the Holy Quran with experienced teachers.</p>
-                <div class="urdu" style="font-size: 1.25rem;">حفظِ قرآن</div>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-cube card-icon"></i>
-                <h3>Islamic Studies</h3>
-                <p style="color: #666; margin-bottom: 15px;">Basic Islamic principles, prayers, and manners for kids.
-                </p>
-                <div class="urdu" style="font-size: 1.25rem;">اسلامی تعلیمات</div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer
-        style="background: #1a1a1a; color: white; padding: 60px 0 20px; border-top: 5px solid var(--secondary-color);">
-        <div class="container" style="text-align: center;">
-            <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 style="color: var(--secondary-color); font-size: 1.8rem;">Saeed Quran Academy</h3>
+                    <p style="margin-top: 20px; line-height: 1.8; color: #bbb;">Online 1-on-1 Quran and Islamic studies globally.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Fees</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> +92 302 7480855</p>
+                    <p><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</p>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923027480855" class="whatsapp-float"
-        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
-        target="_blank">
+    <a href="https://wa.me/923027480855" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 </body>

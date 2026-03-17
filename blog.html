@@ -4,120 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اردو بلاگ | سعید قرآن اکیڈمی</title>
+    <title>ہمارا اردو بلاگ | سعید قرآن اکیڈمی</title>
+    <meta name="description" content="سعید قرآن اکیڈمی کا اردو بلاگ جہاں آپ کو قرآن، تجوید، اور اسلامی طرز زندگی سے متعلق مفید مضامین ملیں گے۔">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Top Bar -->
-    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="background: var(--primary-dark); color: white; padding: 10px 0; font-size: 0.85rem; position: fixed; top: 0; width: 100%; z-index: 1001;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; direction: ltr;">
             <div style="display: flex; gap: 20px;">
-                <span><i class="fas fa-phone"></i> <span class="phone-number">+92 302 7480855</span></span>
+                <span><i class="fas fa-phone"></i> +92 302 7480855</span>
                 <span><i class="fas fa-envelope"></i> hafiznaeemsial@gmail.com</span>
             </div>
             <div class="urdu" style="display: flex; align-items: center; gap: 15px;">
-                <i class="fas fa-language"></i>
                 <a href="blog.html" style="color:var(--secondary-color); font-weight: bold;">اردو بلاگ</a> |
                 <a href="blog-en.html" style="color:var(--secondary-color); font-weight: bold;">English Blog</a>
-                <i class="fas fa-language" style="transform: scaleX(-1);"></i>
             </div>
         </div>
     </div>
 
     <!-- Navigation -->
-    <header>
+    <header style="margin-top: 40px;">
         <div class="container navbar">
             <div class="logo">
                 <div class="logo-text">
                     <h1 style="color: var(--primary-dark); margin:0; font-size: 1.8rem;">Saeed Quran Academy</h1>
-                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید
-                        قرآن اکیڈمی</span>
+                    <span class="urdu" style="color: var(--accent-color); font-weight: bold; font-size: 1.3rem;">سعید قرآن اکیڈمی</span>
                 </div>
             </div>
-            <nav class="nav-links">
+            <nav class="nav-links" style="direction: ltr;">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="courses.html">Courses</a>
                 <a href="pricing.html">Fees</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a href="contact.html" class="nav-cta">Free Trial Class</a>
+            <a href="contact.html" class="nav-cta" style="direction: ltr;">Free Trial</a>
         </div>
     </header>
 
-    <main class="container" style="margin-top: 40px; padding-bottom: 50px;">
-        <!-- Breadcrumbs -->
-        <div class="urdu"
-            style="margin-bottom: 30px; font-size: 1rem; color: #666; direction: rtl; text-align: right; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-            <a href="index.html" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">ہوم</a>
-            <i class="fas fa-chevron-left" style="font-size: 0.8rem; margin: 0 10px; color: #ccc;"></i>
-            <span style="color: #999;">اردو بلاگ</span>
-        </div>
-
-        <section>
-            <div class="section-title" style="text-align: center; margin-bottom: 50px;">
-                <h2 class="urdu" style="font-size: 2.8rem; margin-bottom: 10px;">ہمارا اردو بلاگ</h2>
-                <div class="divider"
-                    style="width: 80px; height: 4px; background: var(--secondary-color); margin: 0 auto;"></div>
+    <main>
+        <!-- Blog Header -->
+        <section style="background: var(--bg-white); padding: 80px 0; border-bottom: 2px solid #eee;">
+            <div class="container" style="text-align: center;">
+                <h1 class="urdu" style="font-size: 3rem; margin-bottom: 20px;">ہمارا تعلیمی بلاگ</h1>
+                <p class="urdu" style="font-size: 1.35rem; color: #666; max-width: 800px; margin: 0 auto;">قرآن و سنت کی روشنی میں مضامین اور تعلیمی گائیڈز</p>
             </div>
+        </section>
 
-            <div class="card-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-                <!-- Article Cards from Urdu Blog -->
-                <div class="card"
-                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md);">
-                    <img src="assets/images/teach_quran_kids.png" alt="Teach Quran"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px; text-align: right;">
-                        <h3 class="urdu"><a href="article-teach-quran-methods.html">بچوں کو قرآن پڑھانے کے 5 بہترین
-                                طریقے</a></h3>
-                        <p class="urdu" style="color: #666; margin: 15px 0;">والدین کے لیے ایک مکمل رہنما بشمول عملی
-                            تجاویز۔</p>
-                        <a href="article-teach-quran-methods.html"
-                            style="color: var(--primary-color); font-weight: bold;">پورا مضمون پڑھیں <i
-                                class="fas fa-arrow-left"></i></a>
+        <!-- Blog Posts Grid -->
+        <section style="padding: 100px 0;">
+            <div class="container">
+                <div class="card-grid">
+                    <!-- Article 1 -->
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/teach_quran_kids.png" alt="" style="width: 100%; height: 230px; object-fit: cover;">
+                        <div style="padding: 30px; text-align: right;">
+                            <h3 class="urdu" style="font-size: 1.6rem; margin-bottom: 15px;"><a href="article-teach-quran-methods.html">بچوں کو قرآن پڑھانے کے 5 بہترین طریقے</a></h3>
+                            <p class="urdu" style="color: #555; margin-bottom: 25px;">بچوں کو قرآن کریم کی تعلیم دینا والدین کے لیے ایک عظیم سعادت اور ذمہ داری ہے۔ جانیے 5 دلچسپ طریقے...</p>
+                            <a href="article-teach-quran-methods.html" style="color: var(--primary-color); font-weight: bold; font-size: 1.1rem;">مضمون پڑھیں <i class="fas fa-arrow-left"></i></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card"
-                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md);">
-                    <img src="assets/images/tajweed.png" alt="Tajweed"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px; text-align: right;">
-                        <h3 class="urdu"><a href="article-tajweed-importance.html">تجوید کی اہمیت اور ضرورت</a></h3>
-                        <p class="urdu" style="color: #666; margin: 15px 0;">تجوید کے ساتھ قرآن پڑھنا کیوں ضروری ہے؟</p>
-                        <a href="article-tajweed-importance.html"
-                            style="color: var(--primary-color); font-weight: bold;">پورا مضمون پڑھیں <i
-                                class="fas fa-arrow-left"></i></a>
+                    <!-- Article 2 -->
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/tajweed.png" alt="" style="width: 100%; height: 230px; object-fit: cover;">
+                        <div style="padding: 30px; text-align: right;">
+                            <h3 class="urdu" style="font-size: 1.6rem; margin-bottom: 15px;"><a href="article-tajweed-importance.html">تجوید کی اہمیت اور ضرورت</a></h3>
+                            <p class="urdu" style="color: #555; margin-bottom: 25px;">قرآن مجید کو اس کے صحیح لہجے اور قواعد کے ساتھ پڑھنا کیوں ضروری ہے؟ مکمل تفصیل یہاں۔</p>
+                            <a href="article-tajweed-importance.html" style="color: var(--primary-color); font-weight: bold; font-size: 1.1rem;">مضمون پڑھیں <i class="fas fa-arrow-left"></i></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card"
-                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md);">
-                    <img src="assets/images/ramazan.png" alt="Ramadan"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px; text-align: right;">
-                        <h3 class="urdu"><a href="article-ramzan-reflection.html">رمضان اور ہماری زندگی</a></h3>
-                        <p class="urdu" style="color: #666; margin: 15px 0;">رمضان المبارک کے برکات و اثرات۔</p>
-                        <a href="article-ramzan-reflection.html"
-                            style="color: var(--primary-color); font-weight: bold;">پورا مضمون پڑھیں <i
-                                class="fas fa-arrow-left"></i></a>
+                    <!-- Article 3 -->
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/ramazan.png" alt="" style="width: 100%; height: 230px; object-fit: cover;">
+                        <div style="padding: 30px; text-align: right;">
+                            <h3 class="urdu" style="font-size: 1.6rem; margin-bottom: 15px;"><a href="article-ramzan-reflection.html">رمضان اور ہماری زندگی</a></h3>
+                            <p class="urdu" style="color: #555; margin-bottom: 25px;">رمضان المبارک کا بابرکت مہینہ ہماری زندگیوں پر کیا گہرے اثرات چھوڑتا ہے؟</p>
+                            <a href="article-ramzan-reflection.html" style="color: var(--primary-color); font-weight: bold; font-size: 1.1rem;">مضمون پڑھیں <i class="fas fa-arrow-left"></i></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card"
-                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow-md);">
-                    <img src="assets/images/quran_success.png" alt="Quran Success"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px; text-align: right;">
-                        <h3 class="urdu"><a href="article-quran-success.html">قرآن اور کامیابی</a></h3>
-                        <p class="urdu" style="color: #666; margin: 15px 0;">دنیا اور آخرت کی کامیابی کا راستہ قرآن ہے۔
-                        </p>
-                        <a href="article-quran-success.html"
-                            style="color: var(--primary-color); font-weight: bold;">پورا مضمون پڑھیں <i
-                                class="fas fa-arrow-left"></i></a>
+                    <!-- Article 4 -->
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/quran_success.png" alt="" style="width: 100%; height: 230px; object-fit: cover;">
+                        <div style="padding: 30px; text-align: right;">
+                            <h3 class="urdu" style="font-size: 1.6rem; margin-bottom: 15px;"><a href="article-quran-success.html">قرآن اور کامیابی</a></h3>
+                            <p class="urdu" style="color: #555; margin-bottom: 25px;">قرآن مجید کا راستہ ہی دنیا اور آخرت کی اصل کامیابی کا راستہ ہے۔</p>
+                            <a href="article-quran-success.html" style="color: var(--primary-color); font-weight: bold; font-size: 1.1rem;">مضمون پڑھیں <i class="fas fa-arrow-left"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,17 +103,36 @@
     </main>
 
     <!-- Footer -->
-    <footer
-        style="background: #1a1a1a; color: white; padding: 60px 0 20px; border-top: 5px solid var(--secondary-color);">
-        <div class="container" style="text-align: center;">
-            <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+    <footer style="direction: ltr;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="text-align: left;">
+                    <h3 style="color: var(--secondary-color); font-size: 1.8rem;">Saeed Quran Academy</h3>
+                    <p style="margin-top: 20px; line-height: 1.8; color: #bbb;">Leading international online Quran academy dedicated to spreading the light of Quranic education globally.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
+                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
+                        <li style="margin-bottom: 12px;"><a href="pricing.html">Fees</a></li>
+                        <li style="margin-bottom: 12px;"><a href="blog.html">Urdu Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h3>Contact Us</h3>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 15px;"></i> +92 302 7480855</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 15px;"></i> hafiznaeemsial@gmail.com</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; color: #777;">
+                <p>&copy; 2026 Saeed Quran Academy. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923027480855" class="whatsapp-float"
-        style="position:fixed; bottom:30px; right:30px; background:#25d366; color:white; width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1000;"
-        target="_blank">
+    <a href="https://wa.me/923027480855" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 </body>
