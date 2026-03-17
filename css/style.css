@@ -290,29 +290,51 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    /* Top Bar & Header Mobile Fix */
-    div[style*="position: fixed"] {
+    /* Top Bar Mobile Fix */
+    div[style*="position: fixed"][style*="z-index: 1001"] {
         position: static !important;
+        padding: 10px 0 !important;
     }
-    
+
+    div[style*="z-index: 1001"] .container {
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+
+    div[style*="z-index: 1001"] .container > div:first-child {
+        flex-direction: column !important;
+        gap: 8px !important;
+        align-items: center !important;
+    }
+
+    div[style*="z-index: 1001"] span {
+        white-space: nowrap !important;
+        font-size: 0.9rem !important;
+    }
+
+    div[style*="z-index: 1001"] .urdu {
+        gap: 15px !important;
+        justify-content: center !important;
+        width: 100% !important;
+        font-size: 1rem !important;
+    }
+
+    /* Navigation Header Fix */
     header {
         margin-top: 0 !important;
         position: static !important;
     }
 
     .navbar {
-        flex-direction: column;
-        padding: 20px 0;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .navbar .logo {
-        margin-bottom: 5px;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 15px 0 !important;
+        gap: 15px !important;
     }
 
     .nav-links, .nav-cta {
-        display: none;
+        display: none !important;
     }
     
     .hero {
@@ -320,43 +342,19 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.2rem !important;
+        font-size: 2rem !important;
     }
 
     .hero h2 {
-        font-size: 2rem !important;
-    }
-    
-    .article-content {
-        padding: 30px 20px;
-    }
-
-    .article-content h1 {
         font-size: 1.8rem !important;
     }
     
-    .pricing-section-title {
-        font-size: 1rem;
-        padding: 10px 25px;
+    .article-content {
+        padding: 25px 15px !important;
     }
 
-    /* Footer Mobile Fix */
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .footer-col {
-        text-align: center !important;
-    }
-
-    .footer-col h3 {
-        margin-bottom: 20px;
-    }
-
-    .footer-col ul {
-        padding: 0;
+    .article-content h1 {
+        font-size: 1.6rem !important;
     }
 }
 
