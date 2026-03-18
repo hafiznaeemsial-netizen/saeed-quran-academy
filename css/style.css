@@ -471,5 +471,25 @@ footer {
     .article-content h1 {
         font-size: 1.6rem !important;
     }
+
+    /* Contact Page Mobile Fix */
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    .contact-form {
+        padding: 30px 20px !important;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+
+    .submit-btn {
+        padding: 15px !important;
+        font-size: 1rem !important;
+    }
 }
 
