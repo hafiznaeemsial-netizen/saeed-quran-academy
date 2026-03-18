@@ -65,33 +65,77 @@
         <!-- Contact Section -->
         <section style="padding: 100px 0;">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1000px; margin: 0 auto;">
-                    <!-- WhatsApp Box -->
-                    <div style="background: white; padding: 50px; border-radius: 30px; box-shadow: var(--shadow-lg); text-align: center; border: 1px solid #eee;">
-                        <i class="fab fa-whatsapp" style="font-size: 4rem; color: #25d366; margin-bottom: 25px;"></i>
-                        <h2 style="color: var(--primary-dark); margin-bottom: 20px;">WhatsApp Chat</h2>
-                        <p style="color: #666; margin-bottom: 35px;">The fastest way to reach us. Click below to start a direct chat for enrollment and fee details.</p>
-                        <a href="https://wa.me/923027480855" class="btn btn-primary" style="background: #25d366; color: white; display: block; width: 100%;"><i class="fab fa-whatsapp"></i> Chat Now</a>
+                <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; max-width: 1200px; margin: 0 auto;">
+                    <!-- Contact Form Box -->
+                    <div class="contact-form">
+                        <h2 style="color: var(--primary-dark); margin-bottom: 30px;">Send Us a Message</h2>
+                        <form action="https://formspree.io/f/hafiznaeemsial@gmail.com" method="POST">
+                            <div class="form-group">
+                                <label for="full-name">Full Name (مکمل نام)</label>
+                                <input type="text" id="full-name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <div class="form-group">
+                                    <label for="email">Email Address (ای میل)</label>
+                                    <input type="email" id="email" name="_replyto" class="form-control" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Mobile Number (موبائل نمبر)</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="+92 300 0000000" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message (آپ کا پیغام)</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message (پیغام بھیجیں)</button>
+                            <p style="margin-top: 15px; font-size: 0.85rem; color: #888; text-align: center;">Powered by Formspree - You will receive the first email to verify your address.</p>
+                        </form>
                     </div>
 
                     <!-- Details Box -->
                     <div style="padding: 20px;">
-                        <h2 style="color: var(--primary-dark); margin-bottom: 30px;">Direct Contact</h2>
+                        <h2 style="color: var(--primary-dark); margin-bottom: 30px;">Direct Contact Info</h2>
+                        
+                        <!-- WhatsApp Link -->
+                        <div style="background: #e8fff1; padding: 25px; border-radius: 20px; border-left: 5px solid #25d366; margin-bottom: 30px;">
+                            <h4 style="color: #25d366;"><i class="fab fa-whatsapp"></i> Quick WhatsApp Chat</h4>
+                            <p style="margin: 10px 0;">Chat directly for instant admission details and fee structures.</p>
+                            <a href="https://wa.me/923027480855" style="font-weight: bold; color: #128c7e;">+92 302 7480855 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+
                         <div style="margin-bottom: 25px;">
                             <h4 style="color: var(--accent-color); margin-bottom: 10px;">Email Support</h4>
                             <p style="font-size: 1.1rem;"><i class="fas fa-envelope" style="margin-right: 15px; color: var(--primary-color);"></i> hafiznaeemsial@gmail.com</p>
                         </div>
+
                         <div style="margin-bottom: 25px;">
-                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">Phone / WhatsApp</h4>
+                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">Phone Support</h4>
                             <p style="font-size: 1.1rem;"><i class="fas fa-phone" style="margin-right: 15px; color: var(--primary-color);"></i> +92 302 7480855</p>
                         </div>
+
                         <div style="margin-bottom: 40px;">
-                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">Location</h4>
+                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">Our Location</h4>
                             <p style="font-size: 1.1rem;"><i class="fas fa-map-marker-alt" style="margin-right: 15px; color: var(--primary-color);"></i> Multan, Punjab, Pakistan</p>
                         </div>
-                        <div class="urdu" style="text-align: right; background: #fffcf0; padding: 25px; border-radius: 15px;">
+
+                        <div class="urdu" style="text-align: right; background: #fffcf0; padding: 25px; border-radius: 15px; margin-bottom: 30px;">
                             <h3 style="margin-bottom: 10px;">براہِ راست رابطہ</h3>
-                            <p>کسی بھی معلومات کے لیے آپ ہمیں واٹس ایپ پر میسج کر سکتے ہیں۔ ہم جلد از جلد آپ سے رابطہ کریں گے۔</p>
+                            <p>کسی بھی معلومات کے لیے آپ ہمیں فارم کے ذریعے یا واٹس ایپ پر میسج کر سکتے ہیں۔ ہم جلد از جلد آپ سے رابطہ کریں گے۔</p>
+                        </div>
+
+                        <!-- Teaching Platforms Card -->
+                        <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: var(--shadow-sm); border: 1px solid #eee;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: var(--primary-dark);">Flexible Learning Platforms</h3>
+                            <p style="font-size: 0.95rem; color: #666; margin-bottom: 20px;">We use modern digital platforms to conduct our specialized 1-on-1 Quran classes including <strong>Zoom, Skype, Google Meet, and WhatsApp</strong> for your convenience.</p>
+                            <p class="urdu" style="text-align: right; font-size: 1.1rem; line-height: 1.6;">ہم آپ کی کلاسز کے لیے <strong>زوم (Zoom)، اسکائپ (Skype)، گوگل میٹ (Google Meet) اور واٹس ایپ (WhatsApp)</strong> کا استعمال کرتے ہیں۔</p>
+                            
+                            <div style="display: flex; gap: 15px; margin-top: 20px; justify-content: center;">
+                                <i class="fas fa-video" title="Zoom" style="color: #2D8CFF; font-size: 1.5rem;"></i>
+                                <i class="fab fa-skype" title="Skype" style="color: #00AFF0; font-size: 1.5rem;"></i>
+                                <i class="fas fa-users" title="Google Meet" style="color: #00897B; font-size: 1.5rem;"></i>
+                                <i class="fab fa-whatsapp" title="WhatsApp" style="color: #25D366; font-size: 1.5rem;"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +150,10 @@
                 <div class="footer-col" style="text-align: left;">
                     <h3 style="color: var(--secondary-color); font-size: 1.8rem;">Saeed Quran Academy</h3>
                     <p style="margin-top: 20px; line-height: 1.8; color: #bbb;">Leading international online Quran academy dedicated to spreading the light of Quranic education globally.</p>
+                    <div class="footer-social">
+                        <a href="https://web.facebook.com/SaeedQuranAcademy" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@SaeedQuranAcademy" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="footer-col" style="text-align: left;">
                     <h3>Quick Links</h3>
@@ -146,3 +194,4 @@
 </body>
 
 </html>
+
