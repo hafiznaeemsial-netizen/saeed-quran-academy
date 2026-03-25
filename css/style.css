@@ -448,7 +448,7 @@ footer {
         display: none;
     }
 
-    .nav-cta {
+    header .nav-cta {
         display: none !important;
     }
     
